@@ -5,10 +5,10 @@ export const fetchMinmaxDates = createAsyncThunk(
   "fetchMinmaxDates",
   async () => {
     const response = await fetch(
-      "https://api.theguidon.com/archives/wp-json/api/v1/minmax"
+      "https://api-archives.theguidon.com/wp-json/api/v1/minmax",
     );
     return response.json();
-  }
+  },
 );
 
 const minmaxDatesSlice = createSlice({

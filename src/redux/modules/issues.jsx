@@ -33,10 +33,10 @@ export const fetchIssues = createAsyncThunk(
       params.append("until", `${until.year}-${until.month}-${from.day}`);
 
     const response = await fetch(
-      `https://api.theguidon.com/archives/wp-json/api/v1/issues?${params.toString()}`
+      `https://api-archives.theguidon.com/wp-json/api/v1/issues?${params.toString()}`,
     );
     return response.json();
-  }
+  },
 );
 
 const issuesSlice = createSlice({

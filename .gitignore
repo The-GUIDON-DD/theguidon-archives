@@ -29,3 +29,10 @@ content_script/content.json
 content_script/contributors.txt
 content_script/contributors.json
 content_script/parse.bat
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
